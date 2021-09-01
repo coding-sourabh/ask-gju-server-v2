@@ -24,7 +24,7 @@ app.use("/api/question", questionRoute);
 app.use("/api/answer", answerRoute);
 
 app.get("/", function (req, res) {
-  res.send("<h1>Welcome to the backend :)</h1>");
+  res.send("<h1>Welcome to the backend, made by heroku :)</h1>");
 });
 
 mongoose
