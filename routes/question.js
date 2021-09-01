@@ -54,9 +54,9 @@ router.post("/fetchQuestions", async (req, res) => {
   console.log("lovely");
   try {
     // Fetch Questions
-    const ques = await QuestionModel.find();
-    ques.sort((a, b) => b.createdAt - a.createdAt);
-
+    const ques = await QuestionModel.find({});
+    // ques.sort((a, b) => b.createdAt - a.createdAt);
+    console.log(ques);
     res.status(200).json({
       allQuestions: ques,
     });
