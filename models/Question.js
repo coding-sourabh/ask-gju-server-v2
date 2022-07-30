@@ -45,16 +45,6 @@ const questionSchema = new mongoose.Schema(
     questionTime: {
       type: String,
     },
-    upvotes : {
-      type: Number,
-      default: 0,
-      required: true
-    },
-    downvotes : {
-      type: Number,
-      default: 0,
-      required: true
-    }
   },
   { timestamps: true }
 );
